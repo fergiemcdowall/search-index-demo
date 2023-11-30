@@ -1,0 +1,26 @@
+{
+  "name": "search-index-demo",
+  "version": "1.0.0",
+  "description": "How to get started with search-index",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx http-server www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fergiemcdowall/search-index-demo.git"
+  },
+  "author": "Fergus McDowall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fergiemcdowall/search-index-demo/issues"
+  },
+  "homepage": "https://github.com/fergiemcdowall/search-index-demo#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}
