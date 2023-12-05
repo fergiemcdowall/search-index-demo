@@ -2,9 +2,14 @@
   "name": "search-index-demo",
   "version": "1.0.0",
   "description": "How to get started with search-index",
-  "main": "script.js",
+  "browser": "./src/app.js",
+  "type": "module",
   "scripts": {
-    "start": "npx http-server www",
+    "serve": "webpack serve --open",
+    "data-export": "node data/export.js",
+    "data-fetch": "node data/fetch.js",
+    "data-process": "node data/process.js",
+    "data-build": "npm run data-fetch && npm run data-process && npm run data-export && cp data/EarthPorn-top-search-index.json www/data/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +23,13 @@
   },
   "homepage": "https://github.com/fergiemcdowall/search-index-demo#readme",
   "dependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "search-index": "5.0.0-rc3",
+    "stopword": "^2.0.8",
+    "webpack": "^5.89.0"
   },
   "devDependencies": {
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }

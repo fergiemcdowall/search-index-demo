@@ -1,9 +1,9 @@
-import { stopwords } from '/lib/stopwords.js'
-import { SearchIndex, UI } from '/lib/search-index-esm-5.0.0-rc1.js'
+import { eng } from 'stopword'
+import { SearchIndex, UI } from 'search-index'
 
 const si = new SearchIndex({
   name: 'mySearchIndex',
-  stopwords
+  stopwords: eng
 })
 
 Promise.all([
@@ -51,9 +51,9 @@ Promise.all([
       searchInput: {
         elementId: 'searchbox',
         suggestions: {
-          elementId: 'suggestions'
-          // limit: 10,
-          // threshold: 1
+          elementId: 'suggestions',
+          limit: 10,
+          threshold: 1
         }
       }
     })
