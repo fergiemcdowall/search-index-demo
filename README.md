@@ -1,3 +1,4 @@
 # search-index-demo
 
-[Edit in Codeflow ⚡️](https://stackblitz.com/~/github.com/fergiemcdowall/search-index-demo)
+This is a simple example of using `search-index` with `webpack`
+

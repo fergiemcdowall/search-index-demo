@@ -5,7 +5,8 @@
   "browser": "./src/app.js",
   "type": "module",
   "scripts": {
-    "serve": "webpack serve --open",
+    "serve-dev": "webpack serve --open --mode development",
+    "serve-prod": "webpack serve --open --mode production",
     "data-export": "node data/export.js",
     "data-fetch": "node data/fetch.js",
     "data-process": "node data/process.js",
@@ -25,7 +26,7 @@
   "dependencies": {
     "http-server": "^14.1.1",
     "search-index": "5.0.0-rc3",
-    "stopword": "^2.0.8",
+    "stopword": "3.0.0-rc1",
     "webpack": "^5.89.0"
   },
   "devDependencies": {

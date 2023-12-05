@@ -3,16 +3,15 @@ import webpack from 'webpack'
 
 export default [
   {
-    mode: 'development',
+    mode: 'production',
     entry: './src/app.js',
-    experiments: {
-      outputModule: true
-    },
-
     output: {
       path: path.resolve('www/js'),
       publicPath: '/js/',
       filename: 'app.js'
+    },
+    optimization: {
+      usedExports: true
     },
     devServer: {
       static: {
@@ -21,6 +20,10 @@ export default [
       compress: true,
       port: 3030
     },
-    target: ['web']
+    performance: {
+      hints: false,
+      maxEntrypointSize: 512000,
+      maxAssetSize: 512000
+    }
   }
 ]
