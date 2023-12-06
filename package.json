@@ -5,8 +5,7 @@
   "browser": "./src/app.js",
   "type": "module",
   "scripts": {
-    "serve-dev": "webpack serve --open --mode development",
-    "serve-prod": "webpack serve --open --mode production",
+    "serve": "webpack serve --open",
     "data-export": "node data/export.js",
     "data-fetch": "node data/fetch.js",
     "data-process": "node data/process.js",
