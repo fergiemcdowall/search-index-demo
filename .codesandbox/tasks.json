@@ -1,0 +1,41 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "serve": {
+      "name": "serve",
+      "command": "npm run serve",
+      "runAtStart": true,
+      "preview": {
+        "port": 3030
+      }
+    },
+    "data-export": {
+      "name": "data-export",
+      "command": "npm run data-export"
+    },
+    "data-fetch": {
+      "name": "data-fetch",
+      "command": "npm run data-fetch"
+    },
+    "data-process": {
+      "name": "data-process",
+      "command": "npm run data-process"
+    },
+    "data-build": {
+      "name": "data-build",
+      "command": "npm run data-build"
+    },
+    "test": {
+      "name": "test",
+      "command": "npm run test"
+    }
+  }
+}

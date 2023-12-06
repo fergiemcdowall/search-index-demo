@@ -18,7 +18,8 @@ export default [
         directory: path.resolve('www')
       },
       compress: true,
-      port: 3030
+      port: 3030,
+      allowedHosts: 'all'
     },
     performance: {
       hints: false,
